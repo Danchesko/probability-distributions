@@ -1,0 +1,36 @@
+---
+title: Probability Distributions
+author: Daniiar Berdikulov
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE)
+```
+
+Here are you can interactively get acquinted with probability distributions like: Gamma, Chi-squared and Normal.
+
+## Gamma 
+
+```{r, echo=FALSE}
+source("gamma.R")
+shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
+```
+
+## Chi-squared
+
+```{r, echo=FALSE}
+source("chi_squared.R")
+shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
+```
+
+## Normal 
+
+```{r, echo=FALSE}
+source("normal.R")
+shinyApp(ui = ui, server = server, options = list(height = 700, width = 900))
+```
+
+
+
